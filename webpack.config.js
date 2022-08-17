@@ -5,7 +5,7 @@ const webpackConfig = {
   mode: "production",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    filename: "[name] [contenthash].js",
+    filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -55,6 +55,18 @@ const webpackConfig = {
       template: "src/index.html",
     }),
   ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        node_vendors: {
+          name: "vendor",
+          test: /[\\/]node_modules[\\/]/,
+          chunks: "all",
+          priority: 1,
+        },
+      },
+    },
+  },
 };
 
 module.exports = webpackConfig;

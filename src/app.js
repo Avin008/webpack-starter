@@ -1,6 +1,13 @@
+import _ from "lodash";
 import Logo from "./logo.svg";
-const welcomeFunc = () => {
-  return `<h1>VanillaJs Starter</h1><img src="${Logo}" />`;
+
+const App = () => {
+  return `<div class="App">
+  <img class="logo" src="${Logo}" />
+  <h1>Hello, VanillaJs Starter</h1>
+  <p>Edit App.js to see some magic</p>
+  </div>
+  `;
 };
 
-export default welcomeFunc;
+export default App;
