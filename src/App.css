@@ -10,8 +10,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    background-color: black;
-    padding-top: 5rem;
+    margin-top: 5rem;
 }
 
 .App {
@@ -19,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 0.7rem;
 
 }
 
@@ -29,12 +28,11 @@
 }
 
 h1 {
-    color: #FF8C32;
+    color: #231E23;
     font-size: 2rem;
 }
 
 p {
     font-weight: 700;
     font-size: 1rem;
-    color: white;
 }
