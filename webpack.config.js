@@ -33,6 +33,10 @@ const webpackConfig = {
         ],
         type: "javascript/auto",
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   devtool: "source-map",
