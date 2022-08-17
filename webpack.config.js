@@ -5,8 +5,9 @@ const webpackConfig = {
   mode: "production",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    filename: "main.js",
+    filename: "[name] [contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
