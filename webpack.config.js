@@ -48,7 +48,7 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       title: "VanillaJs Starter",
       filename: "index.html",
-      template: "src/template.html",
+      template: "src/index.html",
     }),
   ],
 };
