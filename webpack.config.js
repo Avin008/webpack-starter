@@ -9,6 +9,14 @@ const webpackConfig = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "VanillaJs Starter",
