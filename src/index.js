@@ -1,4 +1,4 @@
-import welcomeFunc from "./app";
-
+import App from "./app";
+import "./App.css";
 const root = document.getElementById("root");
-root.innerHTML = `${welcomeFunc()}`;
+root.innerHTML = `${App()}`;
