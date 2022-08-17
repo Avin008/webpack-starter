@@ -21,6 +21,18 @@ const webpackConfig = {
           },
         },
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+        type: "javascript/auto",
+      },
     ],
   },
   devtool: "source-map",
